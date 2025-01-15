@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0083)file:///C:/Users/anmol/AppData/Roaming/DocPreview/Temp/vs.23820/doc.-982991526.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="./AppTriangle_files/ContentsMerged.css">
+    <title>Class GenericClass</title>
+</head>
+<body><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Class AppTriangle</div>
+    <div id="Contents">
+
+    
+ Represents a command to draw a triangle on the canvas with specified width and height.
+ The command handles the drawing process and validates the triangle's dimensions.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public class AppTriangle : CommandTwoParameters</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Field width</div>
+    <div id="Contents">
+
+    
+ The width of the triangle.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private int width</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Field height</div>
+    <div id="Contents">
+
+    
+ The height of the triangle.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private int height</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Constructor AppTriangle</div>
+    <div id="Contents">
+
+    
+ Initializes a new instance of the <a href="file:///C:/Users/anmol/AppData/Roaming/DocPreview/Temp/vs.23820/doc.-982991526.html">AppTriangle</a> class.
+ This constructor creates an empty triangle command with no predefined dimensions.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public AppTriangle()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Constructor AppTriangle</div>
+    <div id="Contents">
+
+    
+ Initializes a new instance of the <a href="file:///C:/Users/anmol/AppData/Roaming/DocPreview/Temp/vs.23820/doc.-982991526.html">AppTriangle</a> class with specified canvas, width, and height.
+ This constructor allows drawing a triangle with the provided width and height on the given canvas.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public AppTriangle(Canvas c, int width, int height)
+            : base(c)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">c</div><div class="ParameterCommentContainer">
+The canvas on which the triangle will be drawn.
+</div>
+<div class="CommentParameterName">width</div><div class="ParameterCommentContainer">
+The width of the triangle.
+</div>
+<div class="CommentParameterName">height</div><div class="ParameterCommentContainer">
+The height of the triangle.
+</div>
+
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method Execute</div>
+    <div id="Contents">
+
+    
+ Executes the command to draw the triangle on the canvas.
+ The dimensions of the triangle are validated to ensure they are not negative before drawing.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public override void Execute()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CanvasException</span></td>
+<td>
+ Thrown if the width or height of the triangle is negative, which is considered invalid.
+ </td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method CheckParameters</div>
+    <div id="Contents">
+
+    
+ Validates the parameters required to draw the triangle.
+ Ensures that exactly two parameters are provided: width and height, both of which must be valid integers.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public override void CheckParameters(string[] parameters)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">parameters</div><div class="ParameterCommentContainer">
+An array of parameters containing width and height for the triangle.
+</div>
+
+    
+    
+    
+    
+<div id="SectionHeader1" class="SectionHeader">
+   <img id="SectionExpanderImg1" src="./AppTriangle_files/BigSquareExpanded.gif" alt="Collapse/Expand"> 
+   <span class="SectionHeader">
+       <span class="ArrowCursor">
+       Exceptions
+       </span>
+   </span>
+</div>
+<div id="SectionContainerDiv1" class="SectionContainer">
+<table class="MembersTable">
+<colgroup><col width="25%">
+<col width="75%">
+</colgroup><tbody><tr>
+<th>Exception</th>
+<th>Condition</th></tr>
+<tr>
+<td><span class="PseudoLink">CommandException</span></td>
+<td>
+ Thrown if the number of parameters is incorrect or if the provided width and height are invalid.
+ </td>
+</tr>
+</tbody></table>
+</div>
+
+    
+    
+
+</div>
+<p></p>
+
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></body></html>

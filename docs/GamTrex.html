@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0084)file:///C:/Users/anmol/AppData/Roaming/DocPreview/Temp/vs.23820/doc.-2143436594.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="./GamTrex_files/ContentsMerged.css">
+    <title>Class GenericClass</title>
+</head>
+<body><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Property class</div>
+    <div id="Contents">
+
+    
+ Represents the main form for the T-Rex game where the player controls the T-Rex dinosaur to jump over obstacles.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./GamTrex_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public partial class GameTrex : Form</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Constructor GameTrex</div>
+    <div id="Contents">
+
+    
+ Initializes the game form and sets up the initial game state.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./GamTrex_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public GameTrex()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method keyisdown</div>
+    <div id="Contents">
+
+    
+ Handles key press events. Initiates a jump when the spacebar is pressed.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./GamTrex_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void keyisdown(object sender, KeyEventArgs e)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sender</div><div class="ParameterCommentContainer">
+The object sending the event.
+</div>
+<div class="CommentParameterName">e</div><div class="ParameterCommentContainer">
+The key event arguments containing the key pressed.
+</div>
+
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method keyisup</div>
+    <div id="Contents">
+
+    
+ Handles key release events. Ends the jump if the spacebar is released or restarts the game if 'R' is pressed after the game is over.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./GamTrex_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void keyisup(object sender, KeyEventArgs e)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sender</div><div class="ParameterCommentContainer">
+The object sending the event.
+</div>
+<div class="CommentParameterName">e</div><div class="ParameterCommentContainer">
+The key event arguments containing the key released.
+</div>
+
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method MainGameTimerEvent</div>
+    <div id="Contents">
+
+    
+ Main game logic that updates the game state at regular intervals.
+ Controls the T-Rex's movement, handles obstacles, and updates the score.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./GamTrex_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void MainGameTimerEvent(object sender, EventArgs e)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sender</div><div class="ParameterCommentContainer">
+The object sending the event.
+</div>
+<div class="CommentParameterName">e</div><div class="ParameterCommentContainer">
+Event arguments for the timer tick event.
+</div>
+
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method GameReset</div>
+    <div id="Contents">
+
+    
+ Resets the game to its initial state, including score, position, and game over status.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./GamTrex_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void GameReset()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+<p></p>
+
+</div></div></div></div></div></div></div></div></div></div></div></div></body></html>

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOOSE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="BOOSE">
+    <link rel="stylesheet" href="docfx.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script type="module" src="docfx.min.js"></script>
+
+    <script>
+      const theme = localStorage.getItem('theme') || 'auto'
+      document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+    </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            Anamol Dhakal
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="content">
+        <article data-uid="BOOSE">
+
+          <h3 id="classes">Classes</h3>
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppArray.html">AppArray</a>
+            </dt>
+            The AppArray class extends the BOOSE.Array class to provide customized behavior. It reduces restrictions during initialization and modifies methods like Compile, Execute, and CheckParameters, ensuring base functionality while allowing for flexibility. The constructor reduces the restriction counter upon initialization.<br>
+            </dd>
+          </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppCanvas.html">AppCanvas</a>
+            </dt>
+            The AppCanvas class is designed to create a drawing canvas, enabling operations like drawing shapes and text. You can customize the pen color and thickness, and manage drawing positions. The class supports operations such as clearing and resizing the canvas while ensuring that inputs are validated.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppCircle.html">AppCircle</a>
+            </dt>
+            The AppCircle class is responsible for drawing a circle on a canvas. It takes a specified radius, with an optional fill option. This class inherits from CommandTwoParameters and provides methods to execute the circle drawing with proper validation.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppClear.html">AppCanvas</a>
+            </dt>
+            The AppClear class clears the canvas while preserving the current pen position. It inherits from CommandOneParameter and requires no parameters for initialization. The Execute method clears the canvas, and the CheckParameters method ensures no parameters are passed to avoid errors.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppCommandFactory.html">AppCanvas</a>
+            </dt>
+            The AppCommandFactory class is a custom implementation of CommandFactory. It creates various command objects based on the provided command type. The MakeCommand method returns the appropriate command object, like AppTriangle or AppCircle. If the command type is unrecognized, the base class's MakeCommand method is called.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppElse.html">AppCanvas</a>
+            </dt>
+            The AppElse class extends Else and overrides the Restrictions method, leaving it empty. This neutralizes any restrictions, providing the flexibility to bypass constraints or modify them in the future.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppEnd.html">AppEnd</a>
+            </dt>
+            The AppEnd class extends End and overrides the Restrictions method. The method is empty, allowing for customization in the future, while disabling the restrictions that may exist in the base class.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppFor.html">AppFor</a>
+            </dt>
+            The AppFor class extends the For class, overriding the Restrictions method. The method doesn't contain any logic, leaving the default behavior intact while offering future customization.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppIf.html">AppIf</a>
+            </dt>
+            The AppIf class extends the If class. It calls the ReduceRestrictions method in the constructor and overrides Compile and Execute methods. The Restrictions method is overridden but contains no specific logic, providing flexibility for future customizations.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppInteger.html">AppInteger</a>
+            </dt>
+            The AppInteger class removes restrictions imposed on integer behavior by overriding the Restrictions method. The Execute method is also overridden to ensure that no additional constraints are applied while maintaining the original functionality of the base Int class.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppReal.html">AppReal</a>
+            </dt>
+            The AppReal class is an extension of the Real class. It removes restrictions by providing an empty implementation for the Restrictions method and overrides Execute to maintain the base class functionality.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppRectangle.html">AppRectangle</a>
+            </dt>
+            The AppRectangle class is designed for drawing rectangles on a canvas. It takes width, height, and an optional fill parameter. The class checks for valid parameters and draws the rectangle on the canvas. If dimensions are missing, an exception is thrown.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppReset.html">AppReset</a>
+            </dt>
+            The AppReset class resets the canvas to its initial state. It inherits from CommandOneParameter and doesn't require any parameters for execution. If any parameters are provided, a CommandException is thrown.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppStoredProgram.html">AppStoredProgram</a>
+            </dt>
+            The AppStoredProgram class runs a sequence of commands on a given canvas. It takes an ICanvas as a parameter and executes all the commands sequentially. The Run method processes each command until all commands are completed without restriction being applied.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppTriangle.html">AppTriangle</a>
+            </dt>
+            The AppTriangle class is designed to draw a triangle on a canvas. It accepts width and height as parameters and validates them before drawing. The Execute method checks the parameters and draws the triangle, throwing a CanvasException if the dimensions are invalid.<br>
+          </dd>
+        </dl>
+
+          <dl class="jumplist">
+            <dt>
+              <a class="xref" href="AppWhile.html">AppWhile</a>
+            </dt>
+            The AppWhile class is a custom implementation of the While class. It reduces restrictions during initialization and allows flexibility for future extensions. The Restrictions method is overridden but left empty for future customizations.<br>
+          </dd>
+        </dl>
+        <dl class="jumplist">
+          <dt>
+            <a class="xref" href="AppWrite.html">AppWrite</a>
+          </dt>
+          The AppWrite class provides functionality to write text on the canvas. It inherits from the CommandOneParameter class and takes a string as input for the text to be written. The class allows customization of the text's position on the canvas, which can be specified when initializing the command. The Execute method places the text at the specified location on the canvas, and the CheckParameters method ensures that a valid string is provided. If the input text is invalid or empty, a CommandException is thrown. This class ensures that text can be written to the canvas with proper validation and customization of its placement.<br>
+        </dd>
+      </dl>
+
+      </article>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0084)file:///C:/Users/anmol/AppData/Roaming/DocPreview/Temp/vs.23820/doc.-1552390828.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="./MainForm_files/ContentsMerged.css">
+    <title>Class GenericClass</title>
+</head>
+<body><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Property class</div>
+    <div id="Contents">
+
+    
+ The main form of the application where users can interact with the program to draw on the canvas and run commands.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public partial class MainForm : Form</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Constructor MainForm</div>
+    <div id="Contents">
+
+    
+ Sets up everything when the application is first launched.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    public MainForm()</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method OutputWindow_Paint</div>
+    <div id="Contents">
+
+    
+ Draws the current state of the canvas on the output window every time it needs to be refreshed.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void OutputWindow_Paint(object sender, PaintEventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method RunCodeToolStripMenuItem_Click</div>
+    <div id="Contents">
+
+    
+ Executes the code that the user has written in the program window, showing success or errors in the debug window.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void RunCodeToolStripMenuItem_Click(object sender, EventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method TryParseProgram</div>
+    <div id="Contents">
+
+    
+ Tries to parse the program and returns true if there are no syntax errors, otherwise returns false with an error message.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private bool TryParseProgram(string programText, out string errorList)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method TryRunProgram</div>
+    <div id="Contents">
+
+    
+ Runs the parsed program and handles any errors that occur during execution. Returns true if successful, false otherwise.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private bool TryRunProgram(out string errorList)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method LogError</div>
+    <div id="Contents">
+
+    
+ Logs any error messages that occur, displaying them in the debug window.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void LogError(string message)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method checkSyntaxToolStripMenuItem_Click</div>
+    <div id="Contents">
+
+    
+ Checks if the program has any syntax errors and shows those errors in the debug window.
+ If there are no errors, it will display a success message.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void checkSyntaxToolStripMenuItem_Click(object sender, EventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method void</div>
+    <div id="Contents">
+
+    
+ Executes a series of test cases, one by one, and logs the results. It checks for syntax errors and runtime errors, just like running a program.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private async void testCaseToolStripMenuItem_Click(object sender, EventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method OutputWindow_MouseDown</div>
+    <div id="Contents">
+
+    
+ Starts cursor movement when the mouse button is pressed down on the output window.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void OutputWindow_MouseDown(object sender, MouseEventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method OutputWindow_MouseUp</div>
+    <div id="Contents">
+
+    
+ Stops the cursor movement when the mouse button is released on the output window.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void OutputWindow_MouseUp(object sender, MouseEventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method OutputWindow_MouseMove</div>
+    <div id="Contents">
+
+    
+ Moves the cursor and draws a line while the mouse is being moved and the mouse button is held down.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void OutputWindow_MouseMove(object sender, MouseEventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method aboutBooseToolStripMenuItem_Click</div>
+    <div id="Contents">
+
+    
+ Displays the about information for BOOSE when the user clicks the "About BOOSE" menu item.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void aboutBooseToolStripMenuItem_Click(object sender, EventArgs e)</pre></td></tr></tbody></table>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+
+<p></p><hr><p></p><div id="Header">
+    <div id="ProjectTitle">Documentation Preview</div>
+    <div id="PageTitle">Method gameToolStripMenuItem1_Click</div>
+    <div id="Contents">
+
+    
+ Handles the click event for the gameToolStripMenuItem1.
+ This method opens the GameTrex form as a modal dialog when the menu item is clicked.
+ 
+        <div id="SectionHeader0" class="SectionHeader">
+        <img id="SectionExpanderImg0" src="./MainForm_files/BigSquareExpanded.gif" alt="Collapse/Expand">
+        <span class="SectionHeader">
+            <span class="ArrowCursor">
+            Syntax
+            </span>
+        </span>
+    </div>
+
+    <div id="SectionContainerDiv0" class="SectionContainer">
+    <table class="CodeTable">
+    <colgroup><col width="100%"></colgroup>
+    <tbody><tr class="CodeTable"><th class="CodeTable">C#</th></tr><tr class="CodeTable"><td class="CodeTable"><pre style="margin-left: 2px;">    private void gameToolStripMenuItem1_Click(object sender, EventArgs e)</pre></td></tr></tbody></table>
+    
+    <div class="CommentHeader">Parameters</div>
+<div class="CommentParameterName">sender</div><div class="ParameterCommentContainer">
+The source of the event, typically the gameToolStripMenuItem1.
+</div>
+<div class="CommentParameterName">e</div><div class="ParameterCommentContainer">
+The event data.
+</div>
+
+    
+    
+    
+    
+    
+    
+
+</div>
+<p></p>
+
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></body></html>
